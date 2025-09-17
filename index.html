@@ -14,14 +14,29 @@
 </head>
 
 <body>
-
   <!-- MAIN -->
   <main class="container">
     <section class="game__section">
       <h1 class="title">Racing Game</h1>
       <div class="table">
         <div class="screen">
-          <img src="./assets/img/car-main.png" class="car car--main"></img>
+          <div class="road">
+            <!-- Chegaralar -->
+            <div id="roadBorderLeft" class="road-border left-border"></div>
+            <div id="roadBorderRight" class="road-border right-border"></div>
+
+            <!-- Markaziy chiziq -->
+            <div class="road-center"></div>
+
+            <!-- Lane chiziqlari -->
+            <div class="lane-line lane-1"></div>
+            <div class="lane-line lane-2"></div>
+            <div class="lane-line lane-4"></div>
+            <div class="lane-line lane-5"></div>
+          </div>
+          <div id="carCont">
+            <img src="./assets/img/car-main.png" id="carEl" class="car car--main"></img>
+          </div>
         </div>
         <div class="menu">
           <div class="score">
@@ -29,7 +44,7 @@
             <div class="score__label">Score:</div>
           </div>
           <div class="start">
-            <button class="start__button">Start</button>
+            <button id="startBtn" class="start__button">Start</button>
           </div>
         </div>
       </div>
