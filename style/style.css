@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap");
+
+/* UNIVERSAL SELECTORS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #202020;
+}
+
+.game__section {
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.title {
+  color: #5500ff;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #5500ff90, 0 0 20px #5500ff90, 0 0 30px #5500ff90;
+  user-select: none;
+}
+
+.table{
+  width: 1200px;
+  height: 650px;
+  background: #333;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.screen{
+  width: 90%;
+  height: 80%;
+  background: #202020;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #00000090, 0 0 20px #00000080, 0 0 30px #00000070;
+}
+
+.car{
+  width: 50px;
+  height: 100px;
+  background: url("../images/car.png") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 25px);
+}
+
+.menu{
+  width: 90%;
+  height: 10%;
+  background: #202020;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #00000090, 0 0 20px #00000080, 0 0 30px #00000070;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.score{
+  color: #5500ff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.start__button{
+  background: #333;
+  color: #f3f3f3;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start__button:hover{
+  color: #fff;
+  background: #5500ff;
+  box-shadow: 0 0 10px #5500ff90, 0 0 20px #5500ff80, 0 0 30px #5500ff70;
+}
+
+.start__button:active{
+  transform: scale(0.90);
+}
