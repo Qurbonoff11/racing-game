@@ -31,7 +31,7 @@ body {
   font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #5500ff90;
+  text-shadow: 0 0 10px #5500ff90, 0 0 20px #5500ff80, 0 0 30px #5500ff70;
   user-select: none;
 }
 
@@ -174,14 +174,23 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 .start__button:hover {
   color: #fff;
   background: #5500ff;
   box-shadow: 0 0 10px #5500ff90, 0 0 20px #5500ff80, 0 0 30px #5500ff70;
+  text-shadow: 0 0 10px #ffffff90, 0 0 20px #ffffff80, 0 0 30px #ffffff70;
 }
 
 .start__button:active {
   transform: scale(0.9);
+}
+
+.start__button--active{
+  color: #fff;
+  background: #5500ff;
+  box-shadow: 0 0 10px #5500ff90, 0 0 20px #5500ff80, 0 0 30px #5500ff70;
+  text-shadow: 0 0 10px #ffffff90, 0 0 20px #ffffff80, 0 0 30px #ffffff70;
 }
